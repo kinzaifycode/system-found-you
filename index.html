@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Tayyab Bhai 💖</title>
+  //fonts 
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+  //font for a letter.
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="matrix"></canvas>
+
+  <!-- ✅ SCENE 1 — Glitchy Terminal -->
+  <div class="container" id="scene1">
+    <div class="box">
+      <div class="line" id="l1">⚡ Error detected…</div>
+      <div class="line" id="l2">⚠ Missing component…</div>
+      <div class="line" id="l3">⟳ Searching…</div>
+      <div class="line" id="l4">✦ Match found: Tayyab 😪😔</div>
+      <button class="btn" id="continueBtn"
+      onclick="goToReady()">Continue →</button>
+    </div>
+  </div>
+
+  <!-- ✅ SCENE 2 — Are You Ready? -->
+  <div class="container" id="readyPage" style="display:none;">
+    <div class="box">
+      <div class="stars">✦ ✦ ✦</div>
+      <h1 class="question">Are you Ready to see the magic? ✨</h1>
+      <div class="buttons">
+        <button class="btn yes-btn" onclick="goToLetter()">Yes</button>
+        <button class="btn no-btn" id="noBtn" onclick="clickedNo()">No</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ SCENE 3 — Coming Soon -->
+  <div class="container" id="letterPage" style="display:none;">
+    <div class="soon-box">
+      <div class="soon-stars">✦ ✦ ✦</div>
+      <div class="soon-text">Coming Soon... 💖</div>
+      <div class="soon-sub">Warning: This might make your Heart overflow.🌸</div>
+      <button class="click-here-btn" id="clickHereBtn"
+      onclick="goToRealLetter()">Click Here ✨</button>
+    </div>
+  </div>
+
+<!-- ✅ REAL LETTER SCENE -->
+<div class="container" id="realLetterPage" style="display:none;">
+  <canvas id="goldCanvas"></canvas>
+  <div class="letter-container" id="letterContainer">
+    <div class="letter-header">
+      <span class="letter-label">A Message From The Heart</span>
+      <div class="letter-divider">✦ ──────────── ✦</div>
+    </div>
+    <div class="letter-body">
+      <div class="letter-line" id="rl0">Bhai…</div>
+      <div class="letter-line" id="rl1">First of all  Thank you so much bhai ...  🥺</div>
+      <div class="letter-line" id="rl2">Meray sath rehnay ky liya , Meri itni care krnay ky liya, Hmaisha mera khayal rakhnay ky liya , har mushkil mein meray sath rehnay ky liya , aur mugh sy itnaaaaaaaaaaaaa sara wala pyar krnay ky liya 💖</div>
+      <div class="letter-line" id="rl3">Bhai ap bohatttttttttt ziada walay pyaray hain .. Bohat ziada walay ... sab sy ziada walay <div class="letter-love">💖</div></div>
+      <div class="letter-line" id="rl4">Mughy meri feelings express krna nhi atin sai sy lakin phir bhi main bs itna batana chahti hun ky ap mughay is duniya main sab sy ziada pyaray hain  💫</div>
+      <div class="letter-line" id="rl5">Ap jaise jaise mere zindagi mein aaye, lagta hai ke meri duniya ka ek bohot bada hissa ap hi ho.</div>
+      <div class="letter-line" id="rl6">Apke bina sab kuch adhoora sa lagta hai, sab kuch  🥺</div>
+      <div class="letter-line" id="rl7">Ap meri duniya ho , meri zindagi ho , meri jan ,mera maan, sab ap hi ho. 💕</div>
+      <div class="letter-line" id="rl8">Aur meri kainat ho . Thank you for being there for me, Bhai. 💖</div>
+      <div class="letter-line letter-love" id="rl9">I love you soooo wala much Tayyab Bhai 💫</div>
+      <div class="letter-line letter-regards" id="rl10">Regards, </div>
+      <div class="letter-line letter-regards" id="rl11">Apki pyari si bhen ❤️</div>
+    </div>
+    <div class="letter-footer" id="letterFooter" style="opacity:0;">
+      <div class="letter-divider">✦ ──────────── ✦</div>
+      <button class="replay-btn" onclick="replayAll()">↺ Replay from Start</button>
+    </div>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
